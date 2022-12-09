@@ -1,5 +1,5 @@
 {
-  "name": "capacitor-app-actions",
+  "name": "capacitor-dcspark-app-actions",
   "version": "1.0.0",
   "description": "iOS and Android Capacitor plugin for App Actions",
   "main": "dist/plugin.cjs.js",
@@ -11,16 +11,16 @@
     "android/build.gradle",
     "dist/",
     "ios/Plugin/",
-    "CapacitorCommunityAppActions.podspec"
+    "CapacitorAppActions.podspec"
   ],
-  "author": "Nitish Sachar",
+  "author": "Gabriel Garrett",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uioporqwerty/capacitor-app-actions.git"
+    "url": "git+https://github.com/dcspark/capacitor-app-actions.git"
   },
   "bugs": {
-    "url": "https://github.com/uioporqwerty/capacitor-app-actions/issues"
+    "url": "https://github.com/dcspark/capacitor-app-actions/issues"
   },
   "keywords": [
     "capacitor",
