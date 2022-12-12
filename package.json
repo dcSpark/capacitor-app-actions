@@ -1,6 +1,6 @@
 {
   "name": "capacitor-dcspark-app-actions",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "iOS and Android Capacitor plugin for App Actions",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -11,7 +11,7 @@
     "android/build.gradle",
     "dist/",
     "ios/Plugin/",
-    "CapacitorDcsparkAppActions.podspec"
+    "CapacitorAppActions.podspec"
   ],
   "author": "Gabriel Garrett",
   "license": "MIT",
@@ -38,10 +38,11 @@
     "prettier": "prettier \"**/*.{css,html,ts,js,java}\"",
     "swiftlint": "node-swiftlint",
     "docgen": "docgen --api AppActionsPlugin --output-readme README.md --output-json dist/docs.json",
-    "build": "npm run clean && npm run docgen && tsc && rollup -c rollup.config.js",
+    "build": "npm run clean && tsc && rollup -c rollup.config.js",
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build",
+    "postinstall": "npm run build",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate"
   },
