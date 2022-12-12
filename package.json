@@ -41,6 +41,7 @@
     "build": "npm run clean && tsc && rollup -c rollup.config.js",
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
+    "prepare": "yarn install; yarn build",
     "prepublishOnly": "npm run build",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate"
